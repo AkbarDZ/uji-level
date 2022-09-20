@@ -21,10 +21,10 @@ body {
 .dasbor {
     position: absolute;
     width: 360px;
-    height: 108px;
+    height: 70px;
     left: 0px;
     top: 120px;
-    background: rgba(16, 28, 32, 0.35);
+    background: #222D31;
     text-decoration: none;
     color: #FFFFFF;
     display: flex;
@@ -38,10 +38,10 @@ body {
 .dasbor2 {
     position: absolute;
     width: 360px;
-    height: 108px;
+    height: 70px;
     left: 0px;
-    top: 240px;
-    background: rgba(16, 28, 32, 0.35);
+    top: 200px;
+    background: #222D31;
     text-decoration: none;
     color: #FFFFFF;
     display: flex;
@@ -55,10 +55,10 @@ body {
 .dasbor3 {
     position: absolute;
     width: 360px;
-    height: 108px;
+    height: 70px;
     left: 0px;
-    top: 360px;
-    background: rgba(16, 28, 32, 0.35);
+    top: 280px;
+    background: #222D31;
     text-decoration: none;
     color: #FFFFFF;
     display: flex;
@@ -79,9 +79,9 @@ i {
 
 #db {
     position: absolute;
-    font-size: 50px;
+    font-size: 45px;
     left: 38px;
-    top: 28px;
+    top: 12px;
     color: rgba(216, 79, 58, 0.85);
     }
 
@@ -89,7 +89,7 @@ i {
     position: absolute;
     font-size: 50px;
     left: 38px;
-    top: 28px;
+    top: 12px;
     color: rgba(216, 79, 58, 0.85);
     }
 
@@ -97,7 +97,7 @@ i {
     position: absolute;
     font-size: 50px;
     left: 38px;
-    top: 28px;
+    top: 12px;
     color: rgba(216, 79, 58, 0.85);
     }
 
@@ -193,7 +193,7 @@ i {
 
 table {
     width: 75%;
-    height: 100px;
+    height: 150px;
     text-align: center;
     border-collapse: collapse;
 }

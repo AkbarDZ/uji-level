@@ -76,7 +76,7 @@
                         <td>$datbar[Kondisi]</td>
                         <td>
                             <a href='formedit.php?Kode_Barang=".$datbar['Kode_Barang']."'>Edit</a>
-                            <a href='edit.php?Kode_Barang=".$datbar['Kode_Barang']."'>Hapus</a>
+                            <a href='hapus.php?Kode_Barang=".$datbar['Kode_Barang']."'>Hapus</a>
                         </td>
                     </tr>
                     ";
