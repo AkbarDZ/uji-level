@@ -30,12 +30,12 @@
             Dashboard
         </a>
 
-        <a href="" class="dasbor2">
+        <a href="databarang.php" class="dasbor2">
             <i class="uil uil-box" id="db2"></i>
             Data Barang
         </a>
 
-        <a href="" class="dasbor3">
+        <a href="datasiswa.php" class="dasbor3">
             <i class="uil uil-server-alt" id="db3"></i>
             Data Siswa
         </a>
@@ -76,6 +76,7 @@
                         <td>$datbar[Kondisi]</td>
                         <td>
                             <a href='formedit.php?Kode_Barang=".$datbar['Kode_Barang']."'>Edit</a>
+                            /
                             <a href='hapus.php?Kode_Barang=".$datbar['Kode_Barang']."'>Hapus</a>
                         </td>
                     </tr>

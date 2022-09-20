@@ -25,17 +25,17 @@
             <p class="merk">INVtek</p>
         </div>
 
-        <a href="" class="dasbor">
+        <a href="inventori.php" class="dasbor">
             <i class="uil uil-dashboard" id="db"></i>
             Dashboard
         </a>
 
-        <a href="" class="dasbor2">
+        <a href="databarang.php" class="dasbor2">
             <i class="uil uil-box" id="db2"></i>
             Data Barang
         </a>
 
-        <a href="" class="dasbor3">
+        <a href="datasiswa.php" class="dasbor3">
             <i class="uil uil-server-alt" id="db3"></i>
             Data Siswa
         </a>
@@ -43,14 +43,14 @@
 
     <div class="divdua">
         <div class="tabs">
-            <p class="tab">DASHBOARD</p>
+            <p class="tab">Data Siswa</p>
         </div>
 
-        <a href="" class="new">CREATE NEW</a>
+        <a href="createdatsis.html" class="new">CREATE NEW</a>
 
         <table>
             <tr>
-                <th>ID Siswa</th>
+                <th>Id Siswa</th>
                 <th>Nama</th>
                 <th>Kelas</th>
                 <th>Alamat</th>
@@ -73,8 +73,9 @@
                         <td>$datsis[Alamat]</td>
                         <td>$datsis[No_Telp]</td>
                         <td>
-                            <a href='formedit2.php?=".$datsis['Id_Siswa']."'>Edit</a>
-                            <a href='edit2.php?=".$datsis['Id_Siswa']."'>Hapus</a>
+                            <a href='formedit2.php?Id_Siswa=".$datsis['Id_Siswa']."'>Edit</a>
+                            /
+                            <a href='edit2.php?Id_Siswa=".$datsis['Id_Siswa']."'>Hapus</a>
                         </td>
                     </tr>
                     ";

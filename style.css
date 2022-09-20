@@ -3,6 +3,8 @@ body {
     padding: 0;
     display: flex;
     font-family: 'Kanit', sans-serif;
+    height: 100%;
+    overflow: hidden;
 }
 
 .merk {
@@ -193,7 +195,6 @@ i {
 
 table {
     width: 75%;
-    height: 150px;
     text-align: center;
     border-collapse: collapse;
 }
@@ -207,6 +208,10 @@ table, tr, td, th {
     color: rgb(148, 148, 148);
     font-family: 'Kanit', sans-serif;
     background-color: rgb(44, 44, 44);
+}
+
+tr {
+    height: 80px;
 }
 
 th {
@@ -291,6 +296,68 @@ input {
     height: 65px;
     left: 910px;
     top: 610px;
+    background: rgba(216, 79, 58, 0.75);
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.cancel2 {
+    position: absolute;
+    width: 200px;
+    height: 65px;
+    left: 680px;
+    top: 530px;
+    background: rgba(216, 79, 58, 0.75);
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create2 {
+    position: absolute;
+    width: 200px;
+    height: 65px;
+    left: 910px;
+    top: 530px;
+    background: rgba(216, 79, 58, 0.75);
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.cancel3 {
+    position: absolute;
+    width: 200px;
+    height: 65px;
+    left: 400px;
+    top: 412px;
+    background: rgba(216, 79, 58, 0.75);
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create3 {
+    position: absolute;
+    width: 200px;
+    height: 65px;
+    left: 630px;
+    top: 412px;
     background: rgba(216, 79, 58, 0.75);
     border-radius: 25px;
     text-decoration: none;

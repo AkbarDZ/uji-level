@@ -1,3 +1,16 @@
+<?php
+    include 'koneksi.php';
+
+    $Id_Siswa = $_GET['Id_Siswa'];
+    $sql = "SELECT * FROM datasiswa WHERE Id_Siswa = '$Id_Siswa'";
+    $query = mysqli_query($connect, $sql);
+    $datsis = mysqli_fetch_assoc($query);
+
+    if(mysqli_num_rows($query) < 1){
+        die("data tidak ditemukan");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,8 +28,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <div class="divsatu">
+
+<div class="divsatu">
         <div>
             <i class="uil uil-user-circle"></i>
             <p class="merk">INVtek</p>
@@ -40,21 +53,24 @@
 
     <div class="divdua">
         <div class="tabs">
-            <p class="tab">Create/Data Barang</p>
+            <p class="tab">Edit/Data Siswa</p>
         </div>
 
-        <form action="simpan.php" method="post">
-            <div class="inp"><p class="inplist">Kode Barang : <input type="varchar" name="Kode_Barang" required="required"></p>
-                <p class="inplist">Nama Barang : <input type="text" name="Nama_Barang" required="required"></p>
-                <p class="inplist">Jenis : <input type="text" name="Jenis" required="required"></p>
-                <p class="inplist">Jumlah Total : <input type="number" name="Jumlah_Total" required="required"></p>
-                <p class="inplist">Jumlah Tersedia : <input type="number" name="Jumlah_Tersedia" required="required"></p>
-                <p class="inplist">Kondisi : <input type="text" name="Kondisi" required="required"></p>
-            </div>
-            <a href="databarang.php" class="cancel">CANCEL</a>
-            <input type="submit" name="simpan" value="CREATE" class="create">
+        <form action="edit.php" method="post">
+                <div class="inp"><p class="inplist">ID Siswa : <input type="varchar" name="Id_Siswa" required="required" 
+                value = "<?php echo $datsis['Id_Siswa']?>" ></p>
+                <p class="inplist">Nama : <input type="text" name="Nama" required="required" 
+                value = "<?php echo $datsis['Nama']?>" ></p>
+                <p class="inplist">Kelas : <input type="varchar" name="Kelas" required="required" 
+                value = "<?php echo $datsis['Kelas']?>" ></p>
+                <p class="inplist">Alamat : <input type="varchar" name="Alamat" required="required" 
+                value = "<?php echo $datsis['Alamat']?>" ></p>
+                <p class="inplist">No Telp : <input type="number" name="No_Telp" required="required" 
+                value = "<?php echo $datsis['No_Telp']?>" ></p>
+            <a href="datasiswa.php" class="cancel3">CANCEL</a>
+            <input type="submit" name="simpan2" value="APPLY" class="create3">
         </form>
     </div>
 
 </body>
-</html> 
+</html>

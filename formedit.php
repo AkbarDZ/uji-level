@@ -35,7 +35,7 @@
             <p class="merk">INVtek</p>
         </div>
 
-        <a href="" class="dasbor">
+        <a href="inventori.php" class="dasbor">
             <i class="uil uil-dashboard" id="db"></i>
             Dashboard
         </a>
@@ -45,7 +45,7 @@
             Data Barang
         </a>
 
-        <a href="" class="dasbor3">
+        <a href="datasiswa.php" class="dasbor3">
             <i class="uil uil-server-alt" id="db3"></i>
             Data Siswa
         </a>
