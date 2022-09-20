@@ -20,4 +20,23 @@
             header ('Location: edit.php?status=gagal');
         }
     }
+
+    if(isset($_POST['simpan2'])){
+        $Id_Siswa = $_POST['Id_Siswa'];
+        $Nama = $_POST['Nama'];
+        $Kelas = $_POST['Kelas'];
+        $Alamat = $_POST['Alamat'];
+        $No_Telp = $_POST['No_Telp'];
+
+        $sql = "UPDATE datasiswa SET 
+            Nama = '$Nama', Kelas = '$Kelas', Alamat = '$Alamat',
+            No_Telp = '$No_Telp' WHERE Id_Siswa = '$Id_Siswa' ";
+        $query = mysqli_query($connect,$sql);
+
+        if ($query) {
+            header ('Location: datasiswa.php');
+        }else {
+            header ('Location: edit.php?status=gagal');
+        }
+    }
 ?>

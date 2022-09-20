@@ -75,7 +75,7 @@
                         <td>
                             <a href='formedit2.php?Id_Siswa=".$datsis['Id_Siswa']."'>Edit</a>
                             /
-                            <a href='edit2.php?Id_Siswa=".$datsis['Id_Siswa']."'>Hapus</a>
+                            <a href='hapus.php?Id_Siswa=".$datsis['Id_Siswa']."'>Hapus</a>
                         </td>
                     </tr>
                     ";
