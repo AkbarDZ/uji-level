@@ -1,3 +1,16 @@
+<?php
+    include 'koneksi.php';
+
+    $Kode_Barang = $_GET['Kode_Barang'];
+    $sql = "SELECT * FROM databarang WHERE Kode_Barang = '$Kode_Barang'";
+    $query = mysqli_query($connect, $sql);
+    $datbar = mysqli_fetch_assoc($query);
+
+    if(mysqli_num_rows($query) < 1){
+        die("data tidak ditemukan");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,14 +57,20 @@
         </div>
 
         <form action="simpan.php" method="post">
-                <div class="inp"><p class="inplist">Kode Barang : <input type="varchar" name="Kode_Barang" required="required"></p>
-                <p class="inplist">Nama Barang : <input type="text" name="Nama_Barang" required="required"></p>
-                <p class="inplist">Jenis : <input type="text" name="Jenis" required="required"></p>
-                <p class="inplist">Jumlah Total : <input type="number" name="Jumlah_Total" required="required"></p>
-                <p class="inplist">Jumlah Tersedia : <input type="number" name="Jumlah_Tersedia" required="required"></p>
-                <p class="inplist">Kondisi : <input type="text" name="Kondisi" required="required"></p></div>
+                <div class="inp"><p class="inplist">Kode Barang : <input type="varchar" name="Kode_Barang" required="required" 
+                value = "<?php echo $datbar['Kode_Barang']?>" ></p>
+                <p class="inplist">Nama Barang : <input type="text" name="Nama_Barang" required="required" 
+                value = "<?php echo $datbar['Nama_Barang']?>" ></p>
+                <p class="inplist">Jenis : <input type="text" name="Jenis" required="required" 
+                value = "<?php echo $datbar['Jenis']?>" ></p>
+                <p class="inplist">Jumlah Total : <input type="number" name="Jumlah_Total" required="required" 
+                value = "<?php echo $datbar['Jumlah_Total']?>" ></p>
+                <p class="inplist">Jumlah Tersedia : <input type="number" name="Jumlah_Tersedia" required="required" 
+                value = "<?php echo $datbar['Jumlah_Tersedia']?>" ></p>
+                <p class="inplist">Kondisi : <input type="text" name="Kondisi" required="required"
+                value = "<?php echo $datbar['Kondisi']?>" ></p></div>
             <a href="databarang.php" class="cancel">CANCEL</a>
-            <input type="submit" name="simpan" value="CREATE" class="create">
+            <input type="submit" name="simpan" value="APPLY" class="create">
         </form>
     </div>
 

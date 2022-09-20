@@ -65,7 +65,7 @@
                 $sql = "SELECT * FROM databarang";
                 $query = mysqli_query($connect,$sql);
 
-                while ($datbar = mysqli_fetch_array ($query)){
+                while ($datbar = mysqli_fetch_array($query)){
                     echo "
                     <tr>
                         <td>$datbar[Kode_Barang]</td>
@@ -75,8 +75,8 @@
                         <td>$datbar[Jumlah_Tersedia]</td>
                         <td>$datbar[Kondisi]</td>
                         <td>
-                            <a href='formedit.php?=".$datbar['Kode_Barang']."'>Edit</a>
-                            <a href='edit.php?=".$datbar['Kode_Barang']."'>Hapus</a>
+                            <a href='formedit.php?Kode_Barang=".$datbar['Kode_Barang']."'>Edit</a>
+                            <a href='edit.php?Kode_Barang=".$datbar['Kode_Barang']."'>Hapus</a>
                         </td>
                     </tr>
                     ";
