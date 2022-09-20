@@ -56,7 +56,7 @@
             <p class="tab">Edit/Data Barang</p>
         </div>
 
-        <form action="simpan.php" method="post">
+        <form action="edit.php" method="post">
                 <div class="inp"><p class="inplist">Kode Barang : <input type="varchar" name="Kode_Barang" required="required" 
                 value = "<?php echo $datbar['Kode_Barang']?>" ></p>
                 <p class="inplist">Nama Barang : <input type="text" name="Nama_Barang" required="required" 
