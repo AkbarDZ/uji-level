@@ -11,10 +11,12 @@
     $query = mysqli_query($connect,$sql);
 
     if($query){
-        header ('Location: databarang.php');
+        // header ('Location: databarang.php');
     }else {
         header ('Location: hapus.php?status=gagal');
     }
+
+    // datasiswa bawah
 
     if(isset($_GET['Id_Siswa'])){
         header ('Location: datasiswa.php');
@@ -26,7 +28,7 @@
     $query = mysqli_query($connect,$sql);
 
     if($query){
-        header ('Location: datasiswa.php');
+        // header ('Location: datasiswa.php');
     }else {
         header ('Location: hapus.php?status=gagal');
     }
