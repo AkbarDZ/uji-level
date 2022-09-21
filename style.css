@@ -8,7 +8,7 @@ body {
 }
 
 .merk {
-    font-size: 60px;
+    font-size: 55px;
     line-height: 90px;
     color: #FFFFFF;
 }
@@ -33,8 +33,29 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Roboto Serif';
+    font-size: 28px;
+    line-height: 37px;
+    transition: 0.5s;
+}
+
+.dasbor:hover {
+    position: absolute;
+    width: 360px;
+    height: 70px;
+    left: 0px;
+    top: 120px;
+    background: rgba(216, 79, 58, 0.50);
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Serif';
     font-size: 32px;
     line-height: 37px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 0.5s;
 }
 
 .dasbor2 {
@@ -50,8 +71,29 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Roboto Serif';
+    font-size: 28px;
+    line-height: 37px;
+    transition: 0.5s;
+}
+
+.dasbor2:hover {
+    position: absolute;
+    width: 360px;
+    height: 70px;
+    left: 0px;
+    top: 200px;
+    background: rgba(216, 79, 58, 0.50);
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Serif';
     font-size: 32px;
     line-height: 37px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 0.5s;
 }
 
 .dasbor3 {
@@ -67,8 +109,28 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Roboto Serif';
+    font-size: 28px;
+    line-height: 37px;
+}
+
+.dasbor3:hover {
+    position: absolute;
+    width: 360px;
+    height: 70px;
+    left: 0px;
+    top: 280px;
+    background: rgba(216, 79, 58, 0.50);
+    text-decoration: none;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Serif';
     font-size: 32px;
     line-height: 37px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 0.5s;
 }
 
 i {
@@ -158,7 +220,29 @@ i {
     color: #FFFFFF;
     box-sizing: border-box;
     padding-left: 35px;
+    transition: 0.5s;
     }
+
+    .ikon1:hover {
+        position: absolute;
+        width: 424px;
+        height: 200px;
+        left: 200px;
+        top: 210px;
+        background: rgba(216, 79, 58, 1);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        text-align: right;
+        font-size: 38px;
+        line-height: 48px;
+        color: #FFFFFF;
+        box-sizing: border-box;
+        padding-left: 35px;
+        transition: 0.5s;
+        box-shadow: 5px
+        }
 
 #ic1 {
     position: relative;
@@ -184,7 +268,28 @@ i {
     color: #FFFFFF;
     box-sizing: border-box;
     padding-left: 35px;
+    transition: 0.5s;
     }
+
+    .ikon2:hover {
+        position: absolute;
+        width: 424px;
+        height: 200px;
+        left: 700px;
+        top: 210px;
+        background: rgba(216, 79, 58, 1);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        text-align: right;
+        font-size: 38px;
+        line-height: 48px;
+        color: #FFFFFF;
+        box-sizing: border-box;
+        padding-left: 35px;
+        transition: 0.5s;
+        }
 
 #ic2 {
     position: relative;
@@ -242,6 +347,24 @@ td a:last-child{
     text-decoration: none;
     color: #FFFFFF;
     font-size: 20px;
+    transition: 0.5s;
+}
+
+.new:hover {
+    position: absolute;
+    width: 200px;
+    height: 65px;
+    left: 35px;
+    top: 160px;
+    background: rgba(216, 79, 58, 1);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 20px;
+    transition: 0.5s;
 }
 
 .inp {
@@ -269,8 +392,9 @@ input {
     width: 500px;
     border-bottom-right-radius: 50px;
     border-top-right-radius: 50px;
-    border: 0.5px solid rgba(34, 45, 49, 0.75);
+    border: 0.5px solid rgba(34, 45, 49, 0.50);
     font-size: 25px;
+    padding-left: 15px;
 }
 
 .cancel {
@@ -288,6 +412,25 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
+}
+
+.cancel:hover {
+    position: absolute;
+    width: 200px;
+    height: 65px;
+    left: 680px;
+    top: 610px;
+    background: rgba(216, 79, 58, 1);
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
 }
 
 .create {
@@ -302,6 +445,22 @@ input {
     border: none;
     font-size: 20px;
     color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.create:hover {
+    position: absolute;
+    width: 200px;
+    height: 65px;
+    left: 910px;
+    top: 610px;
+    background: rgba(216, 79, 58, 1);
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    transition: 0.5s;
 }
 
 .cancel2 {
@@ -319,6 +478,25 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
+}
+
+.cancel2:hover {
+    position: absolute;
+    width: 200px;
+    height: 65px;
+    left: 680px;
+    top: 530px;
+    background: rgba(216, 79, 58, 1);
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
 }
 
 .create2 {
@@ -328,6 +506,21 @@ input {
     left: 910px;
     top: 530px;
     background: rgba(216, 79, 58, 0.75);
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.create2:hover {
+    position: absolute;
+    width: 200px;
+    height: 65px;
+    left: 910px;
+    top: 530px;
+    background: rgba(216, 79, 58, 1);
     border-radius: 25px;
     text-decoration: none;
     border: none;
@@ -350,6 +543,25 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
+}
+
+.cancel3:hover {
+    position: absolute;
+    width: 200px;
+    height: 65px;
+    left: 400px;
+    top: 412px;
+    background: rgba(216, 79, 58, 1);
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
 }
 
 .create3 {
@@ -364,4 +576,20 @@ input {
     border: none;
     font-size: 20px;
     color: #FFFFFF;
+    transition: 0.5s;
+}
+
+.create3:hover {
+    position: absolute;
+    width: 200px;
+    height: 65px;
+    left: 630px;
+    top: 412px;
+    background: rgba(216, 79, 58, 1);
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    font-size: 20px;
+    color: #FFFFFF;
+    transition: 0.5s;
 }
